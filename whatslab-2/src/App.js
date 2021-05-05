@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Input from './Components/Input'
 
 
+
 const CaixaPai = styled.div`
 display: flex;
 justify-content:center;
@@ -20,7 +21,9 @@ display: flex;
 function App() {
   return (
     <CaixaPai className="App">
-      <CaixaConversa><Input></Input></CaixaConversa>
+      <CaixaConversa>
+        <Input />
+        </CaixaConversa>
       
       
     </CaixaPai>
