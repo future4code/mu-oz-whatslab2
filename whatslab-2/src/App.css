@@ -1,8 +1,14 @@
-
-
-.input-usuario{
-    width: 8vw;
+.input-usuario {
+  width: 8vw;
 }
-.input-mensagem{
-    width: 35vw;
+.input-mensagem {
+  width: 35vw;
+}
+
+.botao-input {
+  position: fixed;
+  bottom: 0;
+}
+p {
+  padding-bottom: 20px;
 }
