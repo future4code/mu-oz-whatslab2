@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import styled from "styled-components";
-import  '../App.css';
+//import styled from "styled-components";
+import '../App.css'
+
+
 
 // const ContainerInput = styled.div`
 //   width: 50vw;
@@ -41,16 +43,23 @@ function Input() {
     <div>
       {array.map((elemento) => {
         return (
+          
+         <div> 
           <p>
             {elemento.InputUsuario} : {elemento.InputTexto}
           </p>
+          </div>
+          
+         
         );
       })}
 
-      
-      <input className="input-usuario" type="text" value={InputUsuario} onChange={usuarioString} placeholder="Usuário" />
+      <div className="botao-input">
+        <input className="input-usuario" type="text" value={InputUsuario} onChange={usuarioString} placeholder="Usuário" />
       <input className="input-mensagem" type="text" value={InputTexto} onChange={stringState} placeholder="Mensagem"/>
       <button onClick={inputArray}>enviar</button>
+      </div>
+      
     </div>
   );
 }
