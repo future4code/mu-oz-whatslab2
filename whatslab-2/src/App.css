@@ -2,7 +2,14 @@
 
 .input-usuario{
     width: 8vw;
+    
+    
+    /* border: 4px red solid; */
 }
 .input-mensagem{
     width: 35vw;
+    
+    
+    /* border: 4px blue solid; */
+
 }
