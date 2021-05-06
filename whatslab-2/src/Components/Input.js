@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-//import styled from "styled-components";
+import styled from "styled-components";
 import '../App.css'
 
 
@@ -13,17 +13,16 @@ import '../App.css'
 //   height:5vh;
 //   margin:0 auto;
 // `;
-// const InputUsuario = styled.input`
+const InputUsuario = styled.input`
 //   width: 8vw;
-// `;
-// const InputTexto = styled.input`
+ `;
+ const InputTexto = styled.input`
 //   width: 35vw;
-// `;
+ `;
 
-// ======= Código do Guilherme =======
+
 
 function Input() {
-  // Declarar uma nova variável de state, na qual chamaremos de "array"
   const [array, setArray] = useState([]);
   const [InputTexto, setInputTexto] = useState("");
   const [InputUsuario, setInputUsuario] = useState("");
@@ -65,34 +64,4 @@ function Input() {
 }
 export default Input;
 
-// function Input() {
-//     return (
-//         <ContainerInput>
-//             <form >
-//                 <InputUsuario type="text" className='input-usuario' placeholder='Usuário'/>
-//             </form>
-//             <form >
-//                 <InputTexto type="text" className='input-texto' placeholder='Mensagem'/>
 
-//                 <input type="submit"/>
-//             </form>
-//         </ContainerInput>
-
-//     );
-// }
-
-// export default Input;
-/*{ <ContainerInput>
-            <form >
-                <InputUsuario type="text" className='input-usuario' placeholder='Usuário'/>
-            </form>
-            <form >
-                <InputTexto type="text" className='input-texto' placeholder='Mensagem'/>
-
-                <input type="submit"/>
-            </form>
-        </ContainerInput> }
-
-
-    // );
-    */

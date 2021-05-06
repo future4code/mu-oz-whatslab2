@@ -10,31 +10,18 @@ display: flex;
 justify-content:center;
 align-items: center;
 border: 1px solid black;
-
-
-
 `
 const CaixaConversa = styled.div`
 border: 1px solid green;
-
 width: 50%;
 height: 100vh;
 display: flex;
 flex-direction: column;
-
-
 `
 const ConversaDiv = styled.div` 
 height: 100vh;
 overflow: auto;
 `
-
-
-
-
-
-
-
 
 function App() {
   return (
@@ -43,16 +30,9 @@ function App() {
       <ConversaDiv>
       <p></p>
       </ConversaDiv>
-       
-        
       <Input>
-      
         </Input>
-        
         </CaixaConversa>
-        
-      
-      
     </CaixaPai>
   );
 }
