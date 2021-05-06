@@ -1,3 +1,10 @@
+/* .input-usuario {
+  width: 8vw;
+}
+.input-mensagem {
+  width: 35vw;
+} */
+
 
 
 .input-usuario{
@@ -9,7 +16,15 @@
 .input-mensagem{
     width: 35vw;
     
-    
+}
     /* border: 4px blue solid; */
+
+
+.botao-input {
+  position: fixed;
+  bottom: 0;
+}
+p {
+  padding-bottom: 20px;
 
 }
