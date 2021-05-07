@@ -7,6 +7,7 @@
   border: unset;
   font-size: 16px;
   margin-left: 5px;
+  outline: none;
   
 }
 
@@ -19,16 +20,10 @@
   margin-right: 5px;
   margin-left: 5px;
   font-size: 16px;
+  outline: none;
   
     
 }
-.input-mensagem:focus{
-  border: unset;
-}
-.input-usuario:focus{
-  border: transparent;
-}
-
 .botao-input {
   position: fixed;
   bottom: 0;
