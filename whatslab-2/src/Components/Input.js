@@ -1,28 +1,21 @@
 import React, { useState } from "react";
-import styled from "styled-components";
-import '../App.css'
+import  '../App.css';
+import styled from 'styled-components'
+// import Mic from './icons.img/mic-input.png'
 
-
-
-// const ContainerInput = styled.div`
-//   width: 50vw;
-//   border:3px red solid;
-//   display: flex;
-//   align-items: flex-end;
-//   justify-content: center;
-//   height:5vh;
-//   margin:0 auto;
-// `;
-const InputUsuario = styled.input`
-//   width: 8vw;
- `;
- const InputTexto = styled.input`
-//   width: 35vw;
- `;
+const BotaoInput = styled.button`
+  width: 64px;
+  height: 33px;
+  background: #C4C4C4;
+  border-radius: 50px;
+  border: none;
+  font-weight: bold;
+`
 
 
 
 function Input() {
+  // Declarar uma nova variável de state, na qual chamaremos de "array"
   const [array, setArray] = useState([]);
   const [InputTexto, setInputTexto] = useState("");
   const [InputUsuario, setInputUsuario] = useState("");
@@ -38,30 +31,27 @@ function Input() {
   function usuarioString(e) {
     setInputUsuario(e.target.value);
   }
+ function onKeyPress (e) {
+  if(e.charCode === 13){
+    inputArray()
+  }
+ }
   return (
     <div>
       {array.map((elemento) => {
         return (
-          
-         <div> 
           <p>
-            {elemento.InputUsuario} : {elemento.InputTexto}
+          < b> {elemento.InputUsuario}</b> : {elemento.InputTexto}
           </p>
-          </div>
-          
-         
         );
       })}
-
-      <div className="botao-input">
-        <input className="input-usuario" type="text" value={InputUsuario} onChange={usuarioString} placeholder="Usuário" />
-      <input className="input-mensagem" type="text" value={InputTexto} onChange={stringState} placeholder="Mensagem"/>
-      <button onClick={inputArray}>enviar</button>
-      </div>
-      
+      <input className="input-usuario" type="text" value={InputUsuario} onChange={usuarioString} placeholder="Usuário" />
+      <input className="input-mensagem" type="text" value={InputTexto} onChange={stringState} placeholder="Mensagem" onKeyPress={onKeyPress} />
+      <BotaoInput type='submit' onClick={inputArray}>Enviar</BotaoInput>
     </div>
   );
 }
 export default Input;
+
 
 

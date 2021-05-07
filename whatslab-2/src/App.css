@@ -1,29 +1,30 @@
-/* .input-usuario {
-  width: 8vw;
-}
-.input-mensagem {
-  width: 35vw;
-} */
-
-
 
 .input-usuario{
-    width: 8vw;
-    
-    
-    /* border: 4px red solid; */
+  width: 80px;
+  height: 33px;
+  background: #C4C4C4;
+  border-radius: 50px;;
+  border: none;
+  
 }
-.input-mensagem{
-    width: 35vw;
-    
-}
-    /* border: 4px blue solid; */
 
+.input-mensagem{
+  width: 35vw;
+  height: 33px;
+  background: #C4C4C4;
+  border-radius: 43px;
+  border: none;
+  
+    
+}
 
 .botao-input {
   position: fixed;
   bottom: 0;
+  
 }
+
+
 p {
   padding-bottom: 20px;
 
