@@ -10,9 +10,20 @@ const BotaoInput = styled.button`
   border-radius: 50px;
   border: none;
   font-weight: bold;
+  font-size: 16px;
 `
-
-
+const BaloesConversa = styled.p`
+padding-bottom: 20px;
+background-color: #CBFDA4;
+width: 30%;
+margin-left:15px; 
+margin-bottom: 20px;
+border-radius: 10px;
+/* display:flex;
+justify-content:center; */
+padding-top: 10px;
+padding-left: 5px;
+`
 
 function Input() {
   // Declarar uma nova variável de state, na qual chamaremos de "array"
@@ -40,9 +51,9 @@ function Input() {
     <div>
       {array.map((elemento) => {
         return (
-          <p>
-          < b> {elemento.InputUsuario}</b> : {elemento.InputTexto}
-          </p>
+          <BaloesConversa>
+          < b> {elemento.InputUsuario}</b> <br />  {elemento.InputTexto}
+          </BaloesConversa>
         );
       })}
       <input className="input-usuario" type="text" value={InputUsuario} onChange={usuarioString} placeholder="Usuário" />

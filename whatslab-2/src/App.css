@@ -4,7 +4,9 @@
   height: 33px;
   background: #C4C4C4;
   border-radius: 50px;;
-  border: none;
+  border: unset;
+  font-size: 16px;
+  margin-left: 5px;
   
 }
 
@@ -13,9 +15,18 @@
   height: 33px;
   background: #C4C4C4;
   border-radius: 43px;
-  border: none;
+  border: unset;
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 16px;
   
     
+}
+.input-mensagem:focus{
+  border: unset;
+}
+.input-usuario:focus{
+  border: transparent;
 }
 
 .botao-input {
@@ -25,7 +36,4 @@
 }
 
 
-p {
-  padding-bottom: 20px;
 
-}
