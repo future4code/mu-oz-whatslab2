@@ -8,9 +8,9 @@
   font-size: 16px;
   margin-left: 5px;
   outline: none;
+  text-align: center;
   
 }
-
 .input-mensagem{
   width: 35vw;
   height: 33px;
@@ -21,8 +21,14 @@
   margin-left: 5px;
   font-size: 16px;
   outline: none;
-  
-    
+  position: relative;
+  padding-left: 15px;
+}
+.input-mensagem:hover{
+  background: #818080be;
+}
+.input-usuario:hover{
+  background: #818080be;
 }
 .botao-input {
   position: fixed;
