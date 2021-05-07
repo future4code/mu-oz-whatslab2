@@ -11,9 +11,11 @@ import Back from './assets/chevron-left.svg'
 const Header = styled.header `
 background-color: #CBFDA4;
 width: 100%;
-height: 15%;
-`
+height: 10%;
+ display: flex; 
+ justify-content:space-between;
 
+`
 const CaixaPai = styled.div `
 display: flex;
 justify-content:center;
@@ -22,7 +24,6 @@ border: 1px solid black;
 
 `
 const CaixaConversa = styled.div `
-/* border: 1px solid black; */
 width: 50%;
 height: 100vh;
 display: flex;
@@ -33,21 +34,38 @@ const ConversaDiv = styled.div `
 height: 100vh;
 overflow: auto;
 `
-const Seta = styled.img`
-display: flex;
-justify-content: space-between;
+const Perfil = styled.img `
+width: 4vw;
+height:7vh;
+border-radius: 50%;
+margin-top: 6px;
+margin-bottom: 5px;
+margin-left: 45px;
 `
+const ContainerIcons = styled.div`
+display: flex;
+align-items: center;
+`
+const Icons = styled.img`
+margin-left: 15px;
+`
+
 
 function App() {
     return (
         <CaixaPai className="App">
             <CaixaConversa>
                 <Header>
+                  <ContainerIcons>
                     <img src={Back}/>
-                    <img src={Phone}/>
-                    <img src={Camera}/>
-                    <img src={More}/>
-
+                    </ContainerIcons>
+                    <Perfil
+                        src='https://i.picsum.photos/id/1025/200/200.jpg?hmac=lPP7DRqIRSrMTmBMEg5NbVzguwqQQs2meA5kSrgLAhc'></Perfil>
+                    <ContainerIcons>
+                    <Icons src={Phone}/>
+                    <Icons src={Camera}/>
+                    <Icons src={More}/>
+                    </ContainerIcons>
                 </Header>
 
                 <ConversaDiv>
