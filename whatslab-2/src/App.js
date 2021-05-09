@@ -1,5 +1,5 @@
 import React from 'react'
-import './App.css';
+//import './App.css';
 import styled from 'styled-components'
 import Input from './Components/Input'
 import ImgFundo from './icons.img/wpp-gatinho.jpg'
