@@ -1,40 +1,20 @@
-
-.input-usuario{
+/*.input-usuario {
   width: 80px;
   height: 33px;
-  background: #C4C4C4;
-  border-radius: 50px;;
+  background: #c4c4c4;
+  border-radius: 50px;
   border: unset;
   font-size: 16px;
   margin-left: 5px;
   outline: none;
   text-align: center;
+}
+.input-mensagem {
   
 }
-.input-mensagem{
-  width: 35vw;
-  height: 33px;
-  background: #C4C4C4;
-  border-radius: 43px;
-  border: unset;
-  margin-right: 5px;
-  margin-left: 5px;
-  font-size: 16px;
-  outline: none;
-  position: relative;
-  padding-left: 15px;
-}
-.input-mensagem:hover{
+.input-mensagem:hover {
   background: #818080be;
 }
-.input-usuario:hover{
+.input-usuario:hover {
   background: #818080be;
-}
-.botao-input {
-  position: fixed;
-  bottom: 0;
-  
-}
-
-
-
+}*/
