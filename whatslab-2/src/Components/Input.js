@@ -105,7 +105,7 @@ function Input() {
     // 1)     setArray(apaga)   } }  function deletaMensagem  (mensagem)  {    const
     // novaLista = [...this.state.array];    const listaFiltrada =
     // novaLista.filter((msg) =>{      return msg.InputTexto !== mensagem    });
-    // this.setState({array: listaFiltrada})  }
+    // this.setState({array: listaFiltrada})}
     return (
         <div>
             {
