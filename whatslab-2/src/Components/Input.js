@@ -2,7 +2,7 @@ import React, { useState } from "react";
 //import  '../App.css';
 import styled from 'styled-components'
 import Mic from '../assets/mic.svg'
-
+// só pra poder dá push de novo aaaaaaaaah
 const NomeUsuario = styled.input`
 width: 80px;  
   height: 33px;
@@ -80,54 +80,54 @@ function Input() {
     setArray([...array, { InputTexto, InputUsuario }]);
     setInputTexto("");
     console.log(InputTexto)
-    
+
   }
 
   function stringState(e) {
     setInputTexto(e.target.value);
-    
+
   }
   function usuarioString(e) {
     setInputUsuario(e.target.value);
   }
- function onKeyPress (e) {
-  if(e.charCode === 13){
-    inputArray()
-  }
+  function onKeyPress(e) {
+    if (e.charCode === 13) {
+      inputArray()
+    }
 
-  
+
 
   }
-// essa function apaga a primeira msg da conversa
-  function deletarMsg (index){
-    if(window.confirm("quer apagar, vacilão?")){
+  // essa function apaga a primeira msg da conversa
+  function deletarMsg(index) {
+    if (window.confirm("quer apagar, vacilão?")) {
       const copia = array.slice()
       copia.splice(index, 1)
       setArray(copia)
-    
-  }
-}
-  
 
- 
+    }
+  }
+
+
+
   return (
     <div>
       {array.map((elemento) => {
         console.log(elemento)
         return (
-          <BaloesConversa onClick={()=> deletarMsg(elemento)}>
-          < b> {elemento.InputUsuario}</b> <br />  {elemento.InputTexto} 
+          <BaloesConversa onClick={() => deletarMsg(elemento)}>
+            < b> {elemento.InputUsuario}</b> <br />  {elemento.InputTexto}
           </BaloesConversa>
         );
       })}
       <NomeUsuario className="input-usuario" type="text" value={InputUsuario} onChange={usuarioString} placeholder="Usuário" />
-      <Mensagem className="input-mensagem" type="text" value={InputTexto} onChange={stringState} placeholder="Mensagem" onKeyPress={onKeyPress} /> 
-      <Microfone src={Mic}></Microfone> 
-     
+      <Mensagem className="input-mensagem" type="text" value={InputTexto} onChange={stringState} placeholder="Mensagem" onKeyPress={onKeyPress} />
+      <Microfone src={Mic}></Microfone>
+
       <BotaoInput type='submit' onClick={inputArray}>Enviar</BotaoInput>
     </div>
   );
-  
+
 }
 
 export default Input;
